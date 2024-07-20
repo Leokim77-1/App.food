@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+</head>
+<body>
+    
+
+     <span class="bgtxt">chat with MY AI</span>
+   
+     
+       <div class="msb"></div>
+       <div class="aimsb"></div>
+    
+    <div class="sending">
+        <input type="text" placeholder="mesage" class="inp">
+        <button class="sendbtn">Send</button>
+    </div>
+    
+    
+     <div class="change">
+            <input type="text" placeholder="new name" class="cname">
+    <button class="changebtn">Change</button>
+    </div>
+       <div class="head">
+        <div class="pro"><div class="img"></div></div>
+        <span class="ainame">MY AI</span>
+    </div>
+    
+    
+    
+<img src="storage/emulated/0/Bb/discord" alt="">
+
+    
+    
+    
+    
+    <style>
+        .body {
+            background-color: #f0f0f0;
+            padding-bottom: 0px;
+        } 
+        
+        
+       .head {
+           background-color: #9055ff;
+           width: 500px;
+           margin-left: -17px;
+           margin-top: -245px;
+           height: 60px;
+           position: fixed;
+           
+       } 
+       
+       
+       .cname {
+              margin-top: 70px;
+              margin-left: 50px;
+       }
+       
+       .changebtn {
+           font-family: tahoma;
+            margin-top: 140px;
+             margin-left: -5px;
+             position: fixed;
+             background-color: #d53547;
+             border-style: none;
+             padding-right: 20px;
+             padding-left: 20px;
+             padding-top: 10px;
+             padding-bottom: 10px;
+              border-radius: 50px;
+              color: white
+       }
+       
+       
+       .change {
+           background-color: #eaffff;
+           width: 330px;
+           margin-left: 7px;
+           margin-top: 40px;
+           height: 200px;
+           border-radius: 20px;
+           border-style: solid;
+           border-size: 20px;
+           border-color: #97a5a5;
+           opacity: 0;
+       } 
+       
+       
+           
+       .pro {
+           color: red;
+           background-color: white;
+           width: 50px;
+           height: 50px;
+           margin-top: 5px;
+           margin-left: 25px;
+           border-radius: 50px;
+           border-style: solid;
+           border-size: 20px;
+           border-color: #ff4055;
+           position: absolute;
+       } 
+        
+        .img {
+           color: red;
+           background-color: #d5bfff;
+           width: 25px;
+           height: 25px;
+           margin-top: 7px;
+           margin-left: 13.25px;
+           border-radius: 50px;
+           position: absolute;
+       } 
+        
+        
+        .ainame {
+            color: white;
+            font-family: tahoma;
+            margin-top: 20px;
+             margin-left: 90px;
+             position: absolute;
+        }
+        
+        
+        .sendbtn {
+              font-family: tahoma;
+            margin-top: 200px;
+             margin-left: 270px;
+             position: fixed;
+             background-color: #d53547;
+             border-style: none;
+             padding-right: 20px;
+             padding-left: 20px;
+             padding-top: 10px;
+             padding-bottom: 10px;
+              border-radius: 50px;
+              color: white;
+        }
+        
+        .sending {
+            display: flex;
+            align-items: center;
+            margin-top: 540px;
+            position: fixed;
+            
+        }
+        
+        
+        .inp {
+              margin-top: 200px;
+             position: fixed;
+               padding-right: 70px;
+               padding-top: 5px;
+             padding-bottom: 5px;
+        }
+        
+        
+        .msb {
+            font-family: tahoma;
+            margin-top: 30px;
+             margin-left: 190px;
+             position: absolute;
+           
+             border-style: none;
+             padding-right: 90px;
+             padding-left: 20px;
+             padding-top: 20px;
+             padding-bottom: 5px;
+        }
+        
+        
+        
+         .aimsb {
+            font-family: tahoma;
+            margin-top: 140px;
+             margin-left: 1px;
+             position: absolute;
+           
+             border-style: none;
+             padding-right: 10px;
+             padding-left: 10px;
+             padding-top: 20px;
+             padding-bottom: 5px;
+        }
+        
+        
+        .bgtxt {
+                 font-family: tahoma;
+            margin-top: 200px;
+             margin-left: 70px;
+             position: fixed;
+           font-size: 25px;
+             border-style: none;
+             padding-right: 10px;
+             padding-left: 10px;
+             padding-top: 20px;
+             padding-bottom: 5px;
+             color: grey;
+        }
+        
+    </style>
+    
+    
+    
+    <script>
+        
+        const input = document.querySelector(".inp");
+        const mh = document.querySelector(".sending");
+        const send = document.querySelector(".sendbtn");
+  
+    
+    var text = input.value;
+        var inppos = 0;
+        input.addEventListener("click",
+            
+            function() {
+            if (inppos == 0) {
+                inppos ++;
+                mh.style.marginTop = "240px";
+            }
+            
+            
+            else {
+                inppos --;
+                mh.style.marginTop = "540px";
+            }
+     
+            }
+            );
+     const span = document.querySelector('.ainame');
+ const change = document.querySelector('.change');
+   const changebtn = document.querySelector('.changebtn');          
+ const cinp = document.querySelector('.cname');              
+            const bgtxt = document.querySelector(".bgtxt");
+ 
+   
+            
+           
+            
+            span.addEventListener("click",
+                function() {
+      change.style.opacity = '1';
+            
+            });
+            
+                      
+            changebtn.addEventListener("click",
+                function() {
+      change.style.opacity = '0';
+      span.innerHTML = cinp.value;
+  
+    bgtxt.innerHTML = "chat with" + ' ' + span.innerHTML;
+   
+   
+            });
+            
+            
+            
+            
+            send.addEventListener("click",
+                function() {
+                
+                let nel = document.createElement('div');
+                
+                     
+                  
+                              let ainel = document.createElement('div');
+                
+       
+       
+                
+                if (input.value == "hello" || input.value== "Hello" || input.value== "hi" || input.value== "Hi") {
+                
+                             let mess = document.createTextNode(input.value);
+                
+                nel.appendChild(mess);
+                
+                        const mshold = document.querySelector(".msb");
+                        mshold.appendChild(nel);
+                        nel.style.backgroundColor = '#404eff';
+                        
+                        nel.style.paddingLeft = '10px';
+                        nel.style.paddingRight = '10px';
+                        nel.style.paddingTop = '20px';
+                        nel.style.paddingBottom = '20px';
+                        nel.style.borderRadius = '20px';
+                        nel.style.marginBottom = '20px';
+      
+                
+         let aimess = document.createTextNode('hi');
+                
+                ainel.appendChild(aimess);
+                
+                        const aimshold = document.querySelector(".aimsb");
+                        aimshold.appendChild(ainel);
+                        ainel.style.backgroundColor = 'green';
+                        
+                        ainel.style.paddingLeft = '10px';
+                        ainel.style.paddingRight = '10px';
+                        ainel.style.paddingTop = '20px';
+                        ainel.style.paddingBottom = '20px';
+                        ainel.style.borderRadius = '20px';
+                        ainel.style.marginBottom = '20px';
+      
+                     
+                               }
+                        
+                        
+                        
+                        
+                  
+                        
+                      if (input.value == "pussy" || input.value== "dick" || input.value== "tits" || input.value== "ass") {
+
+                                    let mess = document.createTextNode(input.value);
+                
+                nel.appendChild(mess);
+                
+                        const mshold = document.querySelector(".msb");
+                        mshold.appendChild(nel);
+                        nel.style.backgroundColor = '#404eff';
+                        
+                        nel.style.paddingLeft = '10px';
+                        nel.style.paddingRight = '10px';
+                        nel.style.paddingTop = '20px';
+                        nel.style.paddingBottom = '20px';
+                        nel.style.borderRadius = '20px';
+                        nel.style.marginBottom = '20px';
+      
+                        
+                
+                let aimess = document.createTextNode('thats inapporriate');
+                
+                ainel.appendChild(aimess);
+                
+                        const aimshold = document.querySelector(".aimsb");
+                        aimshold.appendChild(ainel);
+                        ainel.style.backgroundColor = 'green';
+                        
+                        ainel.style.paddingLeft = '10px';
+                        ainel.style.paddingRight = '10px';
+                        ainel.style.paddingTop = '20px';
+                        ainel.style.paddingBottom = '20px';
+                        ainel.style.borderRadius = '20px';
+                        ainel.style.marginBottom = '20px';
+      
+                        }
+                        
+                        
+                        
+        
+                        
+                        
+                       } 
+                       );
+            
+            
+            
+           
+   
+   
+                
+                
+        
+    </script>
+    
+</body>
+</html>
