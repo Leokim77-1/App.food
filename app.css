@@ -1,15 +1,14 @@
 .stool{
  display: flex; 
 justify-content: center;
- margin-top: 50px;
+margin-top: 50px;
 }
 .stool input{
     width: 200px;
     height: 25px;
     border-radius: 10px  0px 0px  10px;
     padding-top: 2px;
-    border-style:  solid
- 
+    border-style:  solid;
 }
 
 
@@ -22,4 +21,15 @@ justify-content: center;
  border-radius: 0px  10px 10px  0px;
  padding: 1px 1px;
  margin-top: 0.2px;
+}
+
+.ads{
+    justify-content: center;
+    margin-top: 20px;
+}
+.adt{
+    margin-left: 600px;
+    font-size: 20px;
+    font-family: tahoma;
+    font-weight: bolder;
 }
