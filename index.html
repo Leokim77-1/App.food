@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eslyns foods</title>
+    
+</head>
+<body>
+    <div class="main">
+      <div class="contents">
+          <span class="men">Menu</span>
+          
+     <div class="foods">
+         
+     </div>     
+        <div class="f">Rice and stew<div class="price">50 cedis</div>
+  <div class="Order">Order</div></div>
+                 
+                 
+      <div class="f">Jollof Rice<div class="price">50 cedis</div>
+  <div class="Order">Order</div></div>
+  
+        <div class="f">Rice and stew<div class="price">50 cedis</div>
+  <div class="Order">Order</div></div>
+                 
+                 
+      <div class="f">Jollof Rice<div class="price">50 cedis</div>
+  <div class="Order">Order</div></div>
+  
+        <div class="f">Rice and stew<div class="price">50 cedis</div>
+  <div class="Order">Order</div></div>
+                 
+                 
+      <div class="f">Jollof Rice<div class="price">50 cedis</div>
+  <div class="Order">Order</div></div> 
+  
+  
+        <div class="f">Rice and stew<div class="price">50 cedis</div>
+  <div class="Order">Order</div></div>
+                 
+                 
+      <div class="f">Jollof Rice<div class="price">50 cedis</div>
+  <div class="Order">Order</div></div>
+  
+  
+        <div class="f">Rice and stew<div class="price">50 cedis</div>
+  <div class="Order">Order</div></div>
+                 
+                 
+      <div class="f">Jollof Rice<div class="price">50 cedis</div>
+  <div class="Order">Order</div></div>
+  
+  
+        <div class="f">Rice and stew<div class="price">50 cedis</div>
+  <div class="Order">Order</div></div>
+                 
+                 
+      <div class="f">Jollof Rice<div class="price">50 cedis</div>
+  <div class="Order">Order</div></div>
+  
+  
+        <div class="f">Rice and stew<div class="price">50 cedis</div>
+  <div class="Order">Order</div></div>
+                
+                 
+
+   
+   </div>
+          
+      </div>  
+        
+    </div>
+    
+    
+      <div class="list">
+    <div class="m">Menu</div>
+    <div class="i">Info</div>
+    <div class="c">contact</div>
+       </div> 
+       
+       <div class="tel">
+           
+             <button class="contact-button" onclick="makeCall()">Call Now</button><br>
+    <button class="contact-button" onclick="sendMessage()">Send Message</button><br>
+    <button class="contact-button" onclick="sendEmail()">Send Email</button>
+<button class="canc">X</button>
+       </div>
+       <script src="food.js"></script>
+    
+    <style>
+        
+        .canc{
+              padding: 5px 10px;
+            font-size: 18px;
+            color: white;
+            background-color: #ff001f9b;
+            border: none;
+            border-radius: 50px;
+            margin-left: 100px;
+            margin-top: -300px;
+            position: absolute;
+        }
+        
+        
+        
+        .tel {
+            position: absolute;
+           margin-left: 100px;
+            margin-top: -1000px;
+            opacity: 0;
+        }
+        
+        
+        
+        
+          .contact-button {
+            padding: 15px 10px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+         margin-bottom: 30px;
+        
+        }
+        .contact-button:hover {
+            background-color: #0056b3;
+        }
+        
+        
+        .list {
+            background-color: #000000db;
+            margin-top: 20px;
+          width: 900px;
+          height: 70px;
+          font-family: tahoma;
+          margin-left: -10px;
+          padding-left: 10px;
+          padding-top: 5px;
+          position: fixed;
+          display: flex;
+          
+            }
+        .i{
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+            margin-left: 80px;
+            
+     }
+     
+     .m {
+            font-weight: bold;
+            font-size: 20px;
+            color: #15b6ffa9;
+            margin-left: 15px;
+            text-decoration: underline;
+            
+            
+     }
+     
+     .c {
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+            margin-left: 80px;
+            
+     }
+        
+        .ic {
+            width: 50px;
+            margin-left: 10px;
+            height: 40px;
+        }
+        @media (min-width: 1200px) {
+        .main{
+           margin-top: 50px; 
+        }
+        }
+         .f {
+        display: flex;
+        margin-bottom: 10px;
+        color:  white;
+        font-family: verdana;
+        font-weight: bold;
+        background-color: #1523ff2c;
+        font-size: 18px;
+        padding-top: 5px; 
+        padding-bottom: 5px;
+        padding-left: 5px; 
+        padding-right: 5px;
+    }
+    
+    
+    .price {
+        color: yellowgreen;
+        font-size: 14px;
+        margin-left: 35px;
+    }
+    
+    
+    .Order {
+        color: gold;
+        margin-left: 280px;
+        background-color: #2f7600;
+        padding-top: 5px; 
+              
+        width: 50px; 
+        padding-left: 3px;
+        border-radius: 10px;
+        padding-right: 3px;
+        position: absolute;
+        height: 25px;
+        border-style: solid;
+        border-color: #283825;
+        border-size: 3px;
+    }
+    .main{
+           margin-top: 100px; 
+        }
+    
+    
+    
+    .men {
+       color: gold;
+        margin-left: 125px;
+        font-family: verdana;
+        font-weight: bold;
+        margin-top: -40px;
+        font-size: 30px;
+    }
+    
+    body {
+      background-color: #000000cb;
+    }
+    </style>
+   
+    <script>
+       const menubtn = document.querySelector(".m");
+              const infobtn = document.querySelector(".i");
+                    const conbtn = document.querySelector(".c");
+                    
+      const order = document.querySelector(".Order");      
+    const main = document.querySelector(".main");      
+const canc = document.querySelector(".canc");             
+   const list = document.querySelector(".list");        
+   const tel = document.querySelector(".tel");             
+                         
+                            
+                            
+                            
+                            
+ order.addEventListener("click", function() {
+     main.style.filter = 'blur(10px)';
+     tel.style.marginTop = '-400px';
+     tel.style.opacity = '1';
+     
+ }         
+ )
+ 
+ canc.addEventListener("click", function() {
+     main.style.filter = 'blur(0px)';
+     tel.style.marginTop = '-1000px';
+ }         
+ )
+ 
+                    
+ infobtn.addEventListener("click", function() {
+    infobtn.style.color = '#15b6ffa9';
+   infobtn.style.borderColor = '#15b6ffa9';
+   infobtn.style.textDecoration = 'underline';
+   
+     
+      menubtn.style.color = 'white';
+   menubtn.style.textDecoration = 'none';
+                         
+        conbtn.style.color = 'white';
+   conbtn.style.textDecoration = 'none';                
+                       
+                    }
+                    )
+                    
+                    
+                    
+                    
+                    
+  conbtn.addEventListener("click", function() {
+    conbtn.style.color = '#15b6ffa9';
+   conbtn.style.borderColor = '#15b6ffa9';
+   conbtn.style.textDecoration = 'underline';
+   
+     
+      menubtn.style.color = 'white';
+   menubtn.style.textDecoration = 'none';
+                         
+        infobtn.style.color = 'white';
+   infobtn.style.textDecoration = 'none';                
+                        
+                    }
+                    )
+                    
+                    
+       menubtn.addEventListener("click", function() {
+    menubtn.style.color = '#15b6ffa9';
+   menubtn.style.borderColor = '#15b6ffa9';
+   menubtn.style.textDecoration = 'underline';
+   
+     
+      infobtn.style.color = 'white';
+   infobtn.style.textDecoration = 'none';
+                         
+        conbtn.style.color = 'white';
+   conbtn.style.textDecoration = 'none';                
+                        
+                    }
+                    )             
+        
+        
+        
+    </script>
+    
+    
+</body>
+</html>
