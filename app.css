@@ -1,0 +1,22 @@
+.stool{
+ display: flex; 
+justify-content: center;
+}
+.stool input{
+    height: 20px;
+    border-radius: 10px  0px 0px  10px;
+    padding-top: 2px;
+    border-style:  solid;
+}
+
+
+
+
+.stool img{
+ width: 25px;
+ height: 25px;
+ background-color: rgb(156, 156, 156);
+ border-radius: 0px  10px 10px  0px;
+ padding: 1px 1px;
+ margin-top: 0.2px;
+}
