@@ -3,7 +3,8 @@
 justify-content: center;
 }
 .stool input{
-    height: 20px;
+    width: 189px;
+    height: 25px;
     border-radius: 10px  0px 0px  10px;
     padding-top: 2px;
     border-style:  solid;
@@ -13,8 +14,8 @@ justify-content: center;
 
 
 .stool img{
- width: 25px;
- height: 25px;
+ width: 30px;
+ height: 30px;
  background-color: rgb(156, 156, 156);
  border-radius: 0px  10px 10px  0px;
  padding: 1px 1px;
